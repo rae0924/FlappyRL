@@ -11,7 +11,6 @@ class FlappyBirdAgent(object):
         self.env = PLE(game=self.game, fps=30, display_screen=self.display_screen)
         self.action_space = self.env.getActionSet()
         self.observation_space_shape = self.env.getGameState().__len__()
-        
 
     def eval_genomes(self, genomes, config):
         for genome_id, genome in genomes:
